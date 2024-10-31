@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  position: relative; 
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 75px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+.hamburger {
+  display: none; 
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+.navLinks {
+  display: flex;
+  gap: 0px; 
+  transition: max-height 0.3s ease-out;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  flex: 1; 
+  text-align: center;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.signInButton {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signInButton:hover {
+  background-color: #3498db;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-left: auto;
+}
+
+.username {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.logoutButton {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Stile per schermi piccoli (mobile) */
+/* MEDIA QUERIES - Stile per schermi piccoli (mobile) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; 
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .showMenu {
+    max-height: 300px; 
+  }
+
+  .navLink {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .signInButton, .logoutButton {
+    width: 100%; 
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .userSection {
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+}

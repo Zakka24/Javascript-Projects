@@ -1,0 +1,68 @@
+
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hwb(0 0% 0% 0.1);
+    margin: 10px;
+    text-align: center;
+    width: 40%; 
+    max-width: 300px; 
+    height: auto; 
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.cardImage {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    font-family: Arial, sans-serif;
+    margin: 8px;
+    color: hsl(0% 0% 20%);
+}
+
+
+.cardText {
+    font-family: Arial, sans-serif;
+    color: hsl(0% 0% 30%);
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* MEDIA QUERY: Stili per dispositivi con larghezza max di 768px (tablet o piccoli dispositivi) */
+@media (max-width: 768px) {
+    .card {
+        width: 25%; 
+        max-width: none;
+    }
+
+    .cardImage {
+        width: 60%; 
+    }
+}
+
+/* MEDIA QUERY: Stili per dispositivi con larghezza max di 480px (smartphone) */
+@media (max-width: 480px) {
+    .card {
+        width: 25%; 
+        margin: 10px 10px 0 0;
+    }
+
+    .cardImage {
+        width: 60%;
+    }
+
+    .cardTitle {
+        font-size: 1.2em; 
+    }
+}
